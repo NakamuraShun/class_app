@@ -12,7 +12,7 @@ export const store = createStore({
 	},
 	mutations: {
 		setAppDate: (state) => {
-			let month = new Date().getMonth()
+			let month = new Date().getMonth() + 1
 			let date = new Date().getDate()
 			state.appDate = month + '月' + date + '日'
 		},
